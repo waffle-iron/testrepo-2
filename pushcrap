@@ -1,19 +1,13 @@
 #!/bin/bash
-STATE=false
-writefile() {
-  if [[$STATE]] ; then
-    STATE=false
-    printf shibs > file;
-  else
-    STATE=true
-    printf larft > file;
-  fi
-}
+CNT=0
 
 while [[ true ]]; do
-  writefile
-  git add .
-  git commit -m 'update'
-  git push origin
+  CNT=$CNT+1
+  printf $CNT
+  # npm version patch
+  # writefile
+  # git add .
+  # git commit -m 'update'
+  # git push origin
   sleep 5
 done
