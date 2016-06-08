@@ -1,3 +1,0 @@
-MESSAGE="dist %s"
-VERSION=$(npm version --no-git-tag-version patch -m "'$MESSAGE'")
-echo haha version $VERSION
